@@ -3,9 +3,45 @@ This plugin adds multi-lingual support to "TextMeshPro" Unity plugin.
 You need to have `TextMeshPro` plugin in your project if you have unity 2022 or older. You can install TMPro via `Package Manager`.
 
 Currently Arabic, Farsi and Hebrew are supported. If you find an issue with one of these languages or want support for another RTL language, open an issue.
+In this version of UTB, we're building upon the foundation laid out in the previous repository, enhancing it to support more languages and addressing minor bugs for a smoother user experience. A significant change involves renaming TMP log names for better practicality.
 
+Special Thanks to:
+- [pnarimani](https://github.com/pnarimani/)
+- [hk1ll3r](https://github.com/hk1ll3r/)
 # Attention
 Looking for maintainers. Send email to solisadeq@gamil.com
+
+### What's New?
+
+- **Language Support**: We're expanding language support to ensure a wider range of users can benefit from UTB. Whether it's English, Persian, or any other language, UTB strives to provide a seamless text input experience.
+  
+- **Bug Fixes**: We're squashing minor bugs to enhance UTB's stability and reliability. Your experience with UTB should be smoother than ever before.
+
+### Contribution
+
+We welcome contributions to UTB! If you have ideas for improvements or want to fix bugs, feel free to submit pull requests. Together, we can make UTB even better.
+
+### Documentation
+
+**Note**: The documentation below requires updating to reference the new RTLTextMeshPro.
+
+#### RTLTextMeshPro
+
+RTLTextMeshPro is a powerful component designed to support right-to-left (RTL) text, particularly for languages such as Persian. With RTLTextMeshPro, you can seamlessly integrate RTL text input into your Unity projects.
+
+**Features**:
+- Automatic RTL Detection: RTLTextMeshPro intelligently detects RTL text, ensuring proper rendering and alignment.
+- Language Support: RTLTextMeshPro supports languages with RTL scripts, providing a versatile solution for diverse text input needs.
+- Customization Options: Tailor RTLTextMeshPro to your requirements with options to preserve numbers, enable Farsi script support, fix tags, and force fixes as needed.
+
+**Usage**:
+1. Attach RTLTextMeshPro to your TextMeshPro text component in Unity.
+2. Customize the component properties to suit your requirements, such as preserving numbers or enabling Farsi script support.
+3. RTLTextMeshPro will automatically handle RTL text rendering, ensuring a seamless experience for users.
+### Future Updates
+
+We're committed to continuously improving UTB to meet the evolving needs of our users. Stay tuned for future updates, including additional language support and feature enhancements.
+
 
 # Features for RTL languages
 ### Farsi, Arabic and Hebrew
@@ -120,3 +156,9 @@ When checked, RTL Text Mesh Pro will try to fix rich text tags.
 # Contribution
 All contributions are welcomed. Just make sure you follow the project's code style. also if you want to use RTL ONLY visit [pnarimani](https://github.com/pnarimani/RTLTMPro) or [hk1ll3r](https://github.com/hk1ll3r/RTLTMPro).
 If you have any issues leave your comment [here](https://github.com/Sadeqsoli/UTB-UniversalTextBox/issues) and if there was any question or contribution to Universal Text Box contact me on: solisadeq@gamil.com
+
+### Feedback
+
+Your feedback is invaluable to us! If you encounter any issues or have suggestions for improvement, please don't hesitate to reach out. Together, we can make UTB the best text input solution for Unity projects.
+
+Thank you for choosing UTB - Universal Text Box!
