@@ -1,3 +1,9 @@
+# UTB - Universal Text Box
+This version is essenssialy the same repository as before but it's gonna suport more language in this version, debugging some minor bugs.
+Also I don't like TMP log names so I changed it to something more practical.
+thanks to [pnarimani](https://github.com/pnarimani/) [hk1ll3r](https://github.com/hk1ll3r/)
+
+# [Documentaion below Needs Update and refrencing the RTLTextMeshPro]
 # RTL Text Mesh Pro
 This plugin adds Right-to-left language support to "TextMeshPro" Unity plugin. 
 You need to have `TextMeshPro` plugin in your project. You can install TMPro via `Package Manager`.
