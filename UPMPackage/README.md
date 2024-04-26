@@ -68,8 +68,8 @@ Realtime InputField is supported.
   
 ![Dropdown Preview](Screenshots/Dropdown.gif)
 
-### Multiline
-Yes, This plugin has no problem with multi-line in multi-lingual texts.
+### Multi-Line
+Yes, This plugin has no problem with multi-Line in multi-lingual texts.
   
 ![Multiline Preview](Screenshots/Multiline.PNG)
 
@@ -78,7 +78,7 @@ Auto Font Size is fully supported.
   
 ![AutoSize Preview](Screenshots/AutoSize.gif)
 
-### Chinese,Japanise and Korean languages are soon gonna be supported
+### Chinese,Japanese and Korean languages are soon gonna be supported
 
 more languages are in order.  
 
