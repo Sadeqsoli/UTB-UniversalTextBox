@@ -61,3 +61,6 @@ crashlytics-build.properties
 
 # Raw image files
 *.xcf
+
+/Assets/TextMesh Pro
+/Assets/TextMesh Pro
