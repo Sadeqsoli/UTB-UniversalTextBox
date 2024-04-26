@@ -1,15 +1,19 @@
 {
-  "name": "com.nosuchstudio.rtltmpro",
-  "displayName": "RTL Text Mesh Pro",
-  "version": "3.4.2",
-  "unity": "2019.1",
-  "description": "This package adds Right-to-left language support to TextMeshPro Unity package. Supports Persian, Arabic and Hebrew.",
+  "name": "com.universaltextbox.utb",
+  "displayName": "UTB - Universal Text Box",
+  "version": "3.4.6",
+  "unity": "2023.2",
+  "description": "This package adds universal language support to TextMeshPro Unity package. Supports Multiple languages including RTL.",
   "keywords": [
     "Unity",
-    "TMPro",
     "TextMeshPro",
+    "TMPro",
+	"UniversalTextBox",
     "RTL",
     "Right-To-Left",
+	"Chinese",
+	"Japanese",
+	"Korean",
     "Arabic",
     "Farsi",
     "Persian",
@@ -20,20 +24,20 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": {
-    "name": "hk1ll3r",
-    "email": "hossein.shbz@gmail.com",
-    "url": "https://github.com/hk1ll3r"
+    "name": "Sleepless",
+    "email": "solisadeq@gmail.com",
+    "url": "https://github.com/Sadeqsoli"
   },
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/hk1ll3r/RTLTMPro.git",
+    "url": "https://github.com/Sadeqsoli/UTB-UniversalTextBox.git",
     "directory": "UPMPackage"
   },
   "bugs": {
-    "url": "https://github.com/hk1ll3r/RTLTMPro/issues"
+    "url": "https://github.com/Sadeqsoli/UTB-UniversalTextBox/issues"
   },
-  "homepage": "https://github.com/hk1ll3r/RTLTMPro#readme",
+  "homepage": "https://github.com/Sadeqsoli/UTB-UniversalTextBox#readme",
   "category": "Utility",
   "dependencies": {},
   "publishConfig": {
