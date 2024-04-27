@@ -5,9 +5,9 @@ You need to have `TextMeshPro` plugin in your project if you have unity 2022 or 
 Currently Arabic, Farsi and Hebrew are supported. If you find an issue with one of these languages or want support for another RTL language, open an issue.
 In this version of UTB, we're building upon the foundation laid out in the previous repository, enhancing it to support more languages and addressing minor bugs for a smoother user experience. A significant change involves renaming TMP log names for better practicality.
 
-Special Thanks to:
-- [pnarimani](https://github.com/pnarimani/)
-- [hk1ll3r](https://github.com/hk1ll3r/)
+
+[![openupm](https://img.shields.io/npm/v/com.universaltextbox.utb?label=openupm&registry_uri=https://package.openupm.com)](https://openupm.com/packages/com.universaltextbox.utb/)
+
 # Attention
 Looking for maintainers. Send email to solisadeq@gamil.com
 
@@ -154,6 +154,9 @@ When checked, RTL Text Mesh Pro will try to fix rich text tags.
   * Now you can use InputFields and Dropdowns.
   
 # Contribution
+Special Thanks to:
+- [pnarimani](https://github.com/pnarimani/)
+- [hk1ll3r](https://github.com/hk1ll3r/)
 All contributions are welcomed. Just make sure you follow the project's code style. also if you want to use RTL ONLY visit [pnarimani](https://github.com/pnarimani/RTLTMPro) or [hk1ll3r](https://github.com/hk1ll3r/RTLTMPro).
 If you have any issues leave your comment [here](https://github.com/Sadeqsoli/UTB-UniversalTextBox/issues) and if there was any question or contribution to Universal Text Box contact me on: solisadeq@gamil.com
 
