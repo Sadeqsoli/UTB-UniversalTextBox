@@ -1,15 +1,12 @@
 # Changelog
-These are the release notes for the RTLTMPro package. 
+These are the release notes for the UTB-UniversalTextBox package. 
 
-The github repository is: https://github.com/hk1ll3r/RTLTMPro
+The github repository is: https://github.com/sadeqsoli/UTB-UniversalTextBox
 The parent repository is: https://github.com/mnarimani/RTLTMPro
 
-# v3.4.2 (2021/11/05)
-- Support for unicode32 characters (emojis, etc.)
-- Fix 3D text
+# v3.4.6.1 (2024/05/14)
+- Name Change
 
-# v3.4.1 (2021/10/15)
-- Hebrew support 
+# v3.4.6 (2024/04/26)
+- Fixing tashkeel bug  
 
-# v3.3.9 (2021/05/26)
-- Initial release.

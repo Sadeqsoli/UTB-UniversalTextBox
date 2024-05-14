@@ -1,14 +1,13 @@
 ﻿using TMPro;
 using UnityEditor;
-using UnityEngine;
-using UnityEngine.UI;
-using UnityEditor.Presets;
-using UnityEngine.EventSystems;
 using UnityEditor.SceneManagement;
+using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
-namespace RTLTMPro
+namespace UniversalTextBox
 {
-    public class ContextMenu : Editor
+    public class ContextMenu : UnityEditor.Editor
     {
         private const string kUILayerName = "UI";
 
@@ -20,13 +19,13 @@ namespace RTLTMPro
         private const string kDropdownArrowPath = "UI/Skin/DropdownArrow.psd";
         private const string kMaskPath = "UI/Skin/UIMask.psd";
 
-        private static RTLDefaultControls.Resources s_StandardResources;
+        private static UTBDefaultControls.Resources s_StandardResources;
 
         /// <summary>
         ///     Create a TextMeshPro object that works with the CanvasRenderer
         /// </summary>
         /// <param name="command"></param>
-        [MenuItem("GameObject/UI/Text - RTLTMP", false, 2001)]
+        [MenuItem("GameObject/UI/Text - UTB", false, 2001)]
         private static void CreateTextMeshProGuiObjectPerform(MenuCommand command)
         {
             // Check if there is a Canvas in the scene
@@ -48,7 +47,7 @@ namespace RTLTMPro
 
 
             // Create the RTLTextMeshPro Object
-            var go = new GameObject("Text - RTLTMP");
+            var go = new GameObject("Text - UTB");
             var goRectTransform = go.AddComponent<RectTransform>();
 
             Undo.RegisterCreatedObjectUndo(go, "Create " + go.name);
@@ -60,7 +59,7 @@ namespace RTLTMPro
                 //goRectTransform.sizeDelta = new Vector2(200f, 50f);
                 GameObjectUtility.SetParentAndAlign(go, canvas.gameObject);
 
-                var textMeshPro = go.AddComponent<RTLTextMeshPro>();
+                var textMeshPro = go.AddComponent<UTB>();
                 textMeshPro.text = "";
                 textMeshPro.alignment = TextAlignmentOptions.TopRight;
             }
@@ -74,7 +73,7 @@ namespace RTLTMPro
 
                     GameObjectUtility.SetParentAndAlign(go, contextObject);
 
-                    var textMeshPro = go.AddComponent<RTLTextMeshPro>();
+                    var textMeshPro = go.AddComponent<UTB>();
                     textMeshPro.text = "Button";
                     textMeshPro.fontSize = 24;
                     textMeshPro.alignment = TextAlignmentOptions.Center;
@@ -85,7 +84,7 @@ namespace RTLTMPro
 
                     GameObjectUtility.SetParentAndAlign(go, contextObject);
 
-                    var textMeshPro = go.AddComponent<RTLTextMeshPro>();
+                    var textMeshPro = go.AddComponent<UTB>();
                     textMeshPro.text = "New Text";
                     textMeshPro.alignment = TextAlignmentOptions.TopRight;
                 }
@@ -103,15 +102,15 @@ namespace RTLTMPro
             Selection.activeGameObject = go;
         }
 
-        [MenuItem("GameObject/3D Object/Text - RTLTMP", false, 31)]
+        [MenuItem("GameObject/3D Object/Text - UTB", false, 31)]
         private static void CreateTextMeshProObjectPerform(MenuCommand command)
         {
-            GameObject go = ObjectFactory.CreateGameObject("Text - RTLTMP");
+            GameObject go = ObjectFactory.CreateGameObject("Text - UTB");
 
             // Add support for new prefab mode
             StageUtility.PlaceGameObjectInCurrentStage(go);
 
-            var textComponent = ObjectFactory.AddComponent<RTLTextMeshPro3D>(go);
+            var textComponent = ObjectFactory.AddComponent<UTB3D>(go);
 
             if (TMP_Settings.autoSizeTextContainer)
             {
@@ -138,21 +137,21 @@ namespace RTLTMPro
             Selection.activeGameObject = go;
         }
 
-        [MenuItem("GameObject/UI/Input Field - RTLTMP", false, 2037)]
+        [MenuItem("GameObject/UI/Input Field - UTB", false, 2037)]
         private static void AddTextMeshProInputField(MenuCommand menuCommand)
         {
-            var go = RTLDefaultControls.CreateInputField(GetStandardResources());
+            var go = UTBDefaultControls.CreateInputField(GetStandardResources());
             PlaceUIElementRoot(go, menuCommand);
         }
 
-        [MenuItem("GameObject/UI/Dropdown - RTLTMP", false, 2036)]
+        [MenuItem("GameObject/UI/Dropdown - UTB", false, 2036)]
         public static void AddDropdown(MenuCommand menuCommand)
         {
-            GameObject go = RTLDefaultControls.CreateDropdown(GetStandardResources());
+            GameObject go = UTBDefaultControls.CreateDropdown(GetStandardResources());
             PlaceUIElementRoot(go, menuCommand);
         }
 
-        [MenuItem("GameObject/UI/Button - RTLTMP", false, 2005)]
+        [MenuItem("GameObject/UI/Button - UTB", false, 2005)]
         public static void CreateButton(MenuCommand command)
         {
             var canvas = GetOrCreateCanvasGameObject().transform;
@@ -167,9 +166,9 @@ namespace RTLTMPro
             buttonImage.type = Image.Type.Sliced;
             buttonImage.fillCenter = true;
 
-            var textGo = new GameObject("Text", typeof(RectTransform), typeof(RTLTextMeshPro));
+            var textGo = new GameObject("Text", typeof(RectTransform), typeof(UTB));
             var goRectTransform = textGo.GetComponent<RectTransform>();
-            var textMeshPro = textGo.GetComponent<RTLTextMeshPro>();
+            var textMeshPro = textGo.GetComponent<UTB>();
 
             GameObjectUtility.SetParentAndAlign(textGo, buttonGo);
 
@@ -177,7 +176,6 @@ namespace RTLTMPro
             goRectTransform.anchorMin = Vector2.zero;
             goRectTransform.anchorMax = Vector2.one;
 
-            textMeshPro.text = "دکمه";
             textMeshPro.enableAutoSizing = true;
             textMeshPro.fontSizeMin = 10;
             textMeshPro.fontSizeMax = 100;
@@ -189,7 +187,7 @@ namespace RTLTMPro
             Selection.activeGameObject = buttonGo;
         }
 
-        private static RTLDefaultControls.Resources GetStandardResources()
+        private static UTBDefaultControls.Resources GetStandardResources()
         {
             if (s_StandardResources.standard == null)
             {
