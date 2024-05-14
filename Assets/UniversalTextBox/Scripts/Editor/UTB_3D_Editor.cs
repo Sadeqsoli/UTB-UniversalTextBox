@@ -34,7 +34,7 @@ namespace UniversalTextBox
             
             EditorGUILayout.Space();
             EditorGUI.BeginChangeCheck();
-            EditorGUILayout.PropertyField(originalTextProp, new GUIContent("Universal Text Input Box"));
+            EditorGUILayout.PropertyField(originalTextProp, new GUIContent("Main Text Input Box"));
 
             ListenForZeroWidthNoJoiner();
 
@@ -45,7 +45,7 @@ namespace UniversalTextBox
 
             base.OnInspectorGUI();
 
-            foldout = EditorGUILayout.Foldout(foldout, "Universal Settings", TMP_UIStyleManager.boldFoldout);
+            foldout = EditorGUILayout.Foldout(foldout, "RTL Settings", TMP_UIStyleManager.boldFoldout);
             if (foldout)
             {
                 DrawOptions();

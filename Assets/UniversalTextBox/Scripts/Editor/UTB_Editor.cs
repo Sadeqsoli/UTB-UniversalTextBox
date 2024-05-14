@@ -36,7 +36,7 @@ namespace UniversalTextBox
 
             EditorGUILayout.Space();
             EditorGUI.BeginChangeCheck();
-            EditorGUILayout.PropertyField(originalTextProp, new GUIContent("RTL Text Input Box"));
+            EditorGUILayout.PropertyField(originalTextProp, new GUIContent("Main Text Input Box"));
 
             ListenForZeroWidthNoJoiner();
 
