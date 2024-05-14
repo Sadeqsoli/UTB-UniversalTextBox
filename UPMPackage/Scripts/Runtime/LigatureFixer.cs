@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace RTLTMPro
+namespace UniversalTextBox
 {
     public static class LigatureFixer
     {
@@ -178,7 +178,7 @@ namespace RTLTMPro
                 FlushBufferToOutput(LtrTextHolder, output);
 
                 if (characterAtThisIndex != 0xFFFF &&
-                    characterAtThisIndex != (int)ArabicGeneralLetters.ZeroWidthNoJoiner)
+                    characterAtThisIndex != (int)SpecialCharacters.ZeroWidthNoJoiner)
                 {
                     output.Append(characterAtThisIndex);
                 }

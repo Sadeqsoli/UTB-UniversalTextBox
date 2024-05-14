@@ -1,9 +1,14 @@
 {
-    "name": "RTLTMPro",
+    "name": "UniversalTextBox-Editor",
+    "rootNamespace": "",
     "references": [
+        "UniversalTextBox",
+        "Unity.TextMeshPro.Editor",
         "Unity.TextMeshPro"
     ],
-    "includePlatforms": [],
+    "includePlatforms": [
+        "Editor"
+    ],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": false,

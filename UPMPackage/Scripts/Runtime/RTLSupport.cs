@@ -1,7 +1,7 @@
 ﻿// ReSharper disable IdentifierTypo
 // ReSharper disable CommentTypo
 
-namespace RTLTMPro
+namespace UniversalTextBox
 {
     public static class RTLSupport
     {

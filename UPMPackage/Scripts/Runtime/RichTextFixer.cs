@@ -1,4 +1,4 @@
-namespace RTLTMPro
+namespace UniversalTextBox
 {
     public static class RichTextFixer
     {

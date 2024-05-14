@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 // ReSharper disable IdentifierTypo
 
-namespace RTLTMPro
+namespace UniversalTextBox
 {
     public static class TashkeelFixer
     {

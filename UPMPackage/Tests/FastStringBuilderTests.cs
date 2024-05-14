@@ -3,7 +3,7 @@ using NUnit.Framework;
 
 // ReSharper disable StringLiteralTypo
 
-namespace RTLTMPro.Tests
+namespace UniversalTextBox.Tests
 {
     public class FastFastStringBuilderTests
     {

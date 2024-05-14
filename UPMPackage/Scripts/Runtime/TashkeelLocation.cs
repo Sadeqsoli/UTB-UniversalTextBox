@@ -1,4 +1,5 @@
-namespace RTLTMPro
+
+namespace UniversalTextBox
 {
     public struct TashkeelLocation
     {

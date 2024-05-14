@@ -1,7 +1,7 @@
 ﻿using System.Text;
 using NUnit.Framework;
 
-namespace RTLTMPro.Tests
+namespace UniversalTextBox.Tests
 {
     public class RichTextFixerTests
     {

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RTLTMPro {
+namespace UniversalTextBox {
     public static class Char32Utils {
 
         public static bool IsUnicode16Char(int ch) {

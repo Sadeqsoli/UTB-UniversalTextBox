@@ -1,4 +1,4 @@
-namespace RTLTMPro
+namespace UniversalTextBox
 {
     // Note that if you add to these characters, you also need to define
     // characters inside TashkilRanges.txt file and TextMesh Pro font asset unicode range.

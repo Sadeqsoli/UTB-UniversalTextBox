@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace RTLTMPro
+namespace UniversalTextBox
 {
     /// <summary>
     ///     Sets up and creates the conversion table

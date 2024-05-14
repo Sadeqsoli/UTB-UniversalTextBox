@@ -2,7 +2,7 @@ using System;
 using System.Runtime.CompilerServices;
 using System.Collections.Generic;
 using System.Text;
-namespace RTLTMPro {
+namespace UniversalTextBox {
     public class FastStringBuilder {
         // Using fields to be as efficient as possible
         private int length;
@@ -164,6 +164,17 @@ namespace RTLTMPro {
             StringBuilder sb = new StringBuilder();
             for (int i = 0; i < length; i++) {
                 sb.Append(char.ConvertFromUtf32(array[i]));
+            }
+            return sb.ToString();
+        }
+
+        public string ToDebugString()
+        {
+            StringBuilder sb = new StringBuilder();
+            for (int i = 0; i < length; i++)
+            {
+                sb.Append("\\");
+                sb.Append(array[i].ToString("X"));
             }
             return sb.ToString();
         }

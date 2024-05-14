@@ -1,10 +1,10 @@
 ﻿using TMPro;
 using UnityEngine;
 
-namespace RTLTMPro
+namespace UniversalTextBox
 {
     [ExecuteInEditMode]
-    public class RTLTextMeshPro : TextMeshProUGUI
+    public class UTB : TextMeshProUGUI
     {
         // ReSharper disable once InconsistentNaming
 #if TMP_VERSION_2_1_0_OR_NEWER
@@ -107,7 +107,7 @@ namespace RTLTMPro
             if (originalText == null)
                 originalText = "";
 
-            if (ForceFix == false && TextUtils.IsRTLInput(originalText) == false)
+            if (ForceFix == false && TextUtils.IsRTLText(originalText) == false)
             {
                 isRightToLeftText = false;
                 base.text = originalText;

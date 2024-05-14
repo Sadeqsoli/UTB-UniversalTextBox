@@ -1,10 +1,10 @@
 ﻿using TMPro;
 using UnityEngine;
 
-namespace RTLTMPro
+namespace UniversalTextBox
 {
     [ExecuteInEditMode]
-    public class RTLTextMeshPro3D : TextMeshPro
+    public class UTB3D : TextMeshPro
     {
         // ReSharper disable once InconsistentNaming
 #if TMP_VERSION_2_1_0_OR_NEWER
