@@ -5,7 +5,8 @@ You need to have `TextMeshPro` plugin in your project if you have unity 2022 or 
 Currently Arabic, Farsi and Hebrew are supported. If you find an issue with one of these languages or want support for another RTL language, open an issue.
 In this version of UTB, we're building upon the foundation laid out in the previous repository, enhancing it to support more languages and addressing minor bugs for a smoother user experience. A significant change involves renaming TMP log names for better practicality.
 
-[Releases](https://github.com/Sadeqsoli/UTB-UniversalTextBox/releases)
+[![GitHub Actions](https://github.com/Cysharp/UniTask/workflows/Build-Debug/badge.svg)](https://github.com/Sadeqsoli/UTB-UniversalTextBox/actions) [![Releases](https://img.shields.io/github/release/Cysharp/UniTask.svg)](https://github.com/Sadeqsoli/UTB-UniversalTextBox/releases)
+
 
 
 # Attention
